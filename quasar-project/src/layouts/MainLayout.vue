@@ -11,7 +11,7 @@
               />
             </div>
 
-            <div class="flex items-center ml-2 mt-4">
+            <div class="flex items-center ml-2 mt-5">
               <q-btn flat dense icon="menu" @click="toggleLeftDrawer" />
             </div>
           </div>
