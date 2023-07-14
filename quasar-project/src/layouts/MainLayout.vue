@@ -6,7 +6,7 @@
           <div class="flex flex-row h-full gap-5 py-2">
             <div class="flex items-center mx-3">
               <q-img
-                width="100px"
+                width="77px"
                 src="~assets/logo.png"
               />
             </div>
