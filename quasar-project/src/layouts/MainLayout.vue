@@ -32,8 +32,9 @@
 
 <script>
 import { ref } from 'vue'
-
+import MainMenu from 'src/components/MainMenu.vue'
 export default {
+  components: { MainMenu },
   setup () {
     const leftDrawerOpen = ref(false)
 
@@ -41,7 +42,7 @@ export default {
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
-      },
+      }
     }
   }
 }

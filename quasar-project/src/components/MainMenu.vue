@@ -13,6 +13,10 @@
 
       <q-expansion-item v-else :icon="item.icon" :label="item.name" :key="Number(item.id)">
         <q-item v-for="childItem in item.children" :key="childItem.id" clickable>
+          <q-item-section avatar>
+            <q-icon :name="childItem.icon" />
+          </q-item-section>
+
           <q-item-section>
             {{ childItem.name }}
           </q-item-section>
@@ -24,7 +28,7 @@
 
 <script>
 export default {
-  setup() {
+  setup () {
     return {
       menuItems: [
         {
@@ -70,12 +74,14 @@ export default {
           children: [
             {
               id: 4,
+              icon: 'people',
               name: 'Submenu 1',
               link: '/submenu1'
             },
             {
               id: 5,
               name: 'Submenu 2',
+              icon: 'person_pin',
               link: '/submenu2'
             }
           ]
@@ -88,11 +94,13 @@ export default {
             {
               id: 4,
               name: 'Submenu 1',
+              icon: 'workspaces',
               link: '/submenu1'
             },
             {
               id: 5,
               name: 'Submenu 2',
+              icon: 'insert_emoticon',
               link: '/submenu2'
             }
           ]
@@ -105,6 +113,6 @@ export default {
         }
       ]
     }
-  },
+  }
 }
 </script>
